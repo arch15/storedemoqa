@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="DemoTestSuite" verbose="1" >
+
+   <test name="DemoTest-FF" >
+    <parameter name="browser"  value="firefox"/>
+    <classes>
+      <class name="com.store.DemoTest">
+       <methods>
+       <include name="positiveDemoTest"></include>
+       </methods>
+      </class>
+    </classes>
+   </test>   
+  
+   <test name="DemoTest-CH" >
+   <parameter name="browser"  value="chrome"/>
+     <classes>
+       <class name="com.store.DemoTest">
+       <methods>
+       <include name="positiveDemoTest"></include>
+       </methods>
+       </class>
+    </classes>
+  </test>    
+</suite>
